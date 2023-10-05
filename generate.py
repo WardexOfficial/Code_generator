@@ -4,6 +4,9 @@ import random
 from termcolor import colored
 import sqlite3
 
+global loggined
+loggined = False
+
 # Функция для очистки консоли
 def clear_console():
     os.system('clear')  # Очистка для Linux/Mac
@@ -50,7 +53,6 @@ def start():
         if result:
             text = colored("Successfully!", "green")
             print(text)
-            global loggined
             loggined = True
         else:
             text = colored("Wrong password", "red")
@@ -86,7 +88,7 @@ if __name__ == "__main__":
     # Выведите сгенерированный код
     print("Generated code for the Telegram bot:")
     print(bot_code)
-    log()
+    main()
 
 def main():
     start()
