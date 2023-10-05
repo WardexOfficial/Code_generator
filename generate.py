@@ -86,6 +86,7 @@ if __name__ == "__main__":
     # Выведите сгенерированный код
     print("Generated code for the Telegram bot:")
     print(bot_code)
+    log()
 
 def main():
     start()
