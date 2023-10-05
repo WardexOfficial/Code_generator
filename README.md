@@ -10,4 +10,6 @@ Go to Termux, enter:
 -> cd Code_generator
 -> python generate.py
 
+password: root
+
 Good luck!
