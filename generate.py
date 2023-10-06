@@ -1,8 +1,5 @@
-import os
 import time
 import random
-from termcolor import colored
-import sqlite3
 
 # Функция для очистки консоли
 def clear_console():
@@ -24,8 +21,11 @@ def loading_screen():
         print()
     
     loading_message("os")
+    import os
     loading_message("colors")
+    from termcolor import colored
     loading_message("sql")
+    import sqlite3
     loading_message("menu")
     time.sleep(0.1)
 
