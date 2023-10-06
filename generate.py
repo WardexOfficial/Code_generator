@@ -4,8 +4,6 @@ import random
 from termcolor import colored
 import sqlite3
 
-import generate_mechanik
-
 # Функция для очистки консоли
 def clear_console():
     os.system('clear')  # Очистка для Linux/Mac
