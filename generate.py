@@ -107,7 +107,7 @@ def main():
                 if nbt == 1:
                     generate_bot_code()  # Вызываем функцию генерации кода для Telegram бота
                 elif nbt == 2:
-                    text = colored("None.", "yellow")
+                    text = colored("Check update!.", "yellow")
                     print(f'\n{text}')
                     log()
                 elif nbt == 3:
