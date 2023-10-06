@@ -42,6 +42,11 @@ print(f'{text}\n')
 
 loggined = False  # Инициализируем флаг, который будет указывать, вошел ли пользователь
 
+def help():
+    txt_to_text = """
+    What? Help? Really?"""
+    text = colored(txt_to_text, "yellow")
+
 def start():
     text = colored("Enter password>>> ", "blue")
     user_password = input(f'{text}')
@@ -111,7 +116,7 @@ def main():
             # dashboard
             if nb == 1:
                 clear_console()
-                text = colored("1. Generate code\n2. Codes\n3. Exit", "red")
+                text = colored("1. Generate code\n2. Codes\n3. Custom command\n4. Exit", "red")
                 print(f"\n{text}")
                 text = colored(">>> ", "blue")
                 nbt = int(input(text))
@@ -122,6 +127,11 @@ def main():
                     print(f'\n{text}')
                     log()
                 elif nbt == 3:
+                    text = colored("Enter command>>> ", "blue")
+                    cscm = input(text)
+                    if cscm == 'help';
+                        help()
+                elif nbt == 4:
                     clear_console()
                     exit(-1)
             elif nb == 2:
