@@ -4,6 +4,8 @@ import random
 from termcolor import colored
 import sqlite3
 
+import generate_mechanik
+
 # Функция для очистки консоли
 def clear_console():
     os.system('clear')  # Очистка для Linux/Mac
@@ -63,31 +65,6 @@ def start():
     else:
         print("Unable to connect to the database.")
 
-def generate_bot_code():
-    # Здесь вы можете генерировать код Telegram бота на основе запросов пользователя
-    # Например, вы можете запросить у пользователя имя бота, токен и другие параметры
-
-    bot_name = input("Enter your bot's name: ")
-    bot_token = input("Enter your bot's token: ")
-
-    # Генерируйте код на основе введенных параметров
-    bot_code = f'''
-from telegram import Bot
-
-bot = Bot(token="{bot_token}")
-
-def main():
-    bot.send_message(chat_id=message.chat.id, text="Hello, World!")
-
-if __name__ == "__main__":
-    main()
-'''
-
-    # Выведите сгенерированный код
-    print("Generated code for the Telegram bot:")
-    print(bot_code)
-    main()
-
 def main():
     start()
 
@@ -105,7 +82,7 @@ def main():
                 text = colored(">>> ", "blue")
                 nbt = int(input(text))
                 if nbt == 1:
-                    generate_bot_code()  # Вызываем функцию генерации кода для Telegram бота
+                    generate_mechanik.generate_bot_code()  # Вызываем функцию генерации кода для Telegram бота
                 elif nbt == 2:
                     text = colored("This code can help you create code for Telegram bot", "yellow")
                     print(f'\n{text}')
