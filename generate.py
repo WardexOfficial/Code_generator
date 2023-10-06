@@ -24,7 +24,7 @@ clear_console()
 
 text = colored("BOT CODE CREATOR", "red")
 print(f'\n{text}\n')
-text = colored("v1.1", "yellow")
+text = colored("v1.2", "yellow")
 print(f'\n{text}')
 text = colored("Made By t.me/Autoritetion", "yellow")
 print(f'{text}\n')
