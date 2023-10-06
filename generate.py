@@ -105,7 +105,7 @@ def main():
                 text = colored(">>> ", "blue")
                 nbt = int(input(text))
                 if nbt == 1:
-                    generate_mechanik.generate_bot_code()  # Вызываем функцию генерации кода для Telegram бота
+                    generate_bot_code()  # Вызываем функцию генерации кода для Telegram бота
                 elif nbt == 2:
                     text = colored("This code can help you create code for Telegram bot", "yellow")
                     print(f'\n{text}')
