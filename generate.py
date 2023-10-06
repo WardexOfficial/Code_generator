@@ -129,7 +129,7 @@ def main():
                 elif nbt == 3:
                     text = colored("Enter command>>> ", "blue")
                     cscm = input(text)
-                    if cscm == 'help';
+                    if cscm == 'help':
                         help()
                 elif nbt == 4:
                     clear_console()
