@@ -27,7 +27,7 @@ def loading_screen():
     loading_message("colors")
     loading_message("sql")
     loading_message("menu")
-    time.sleep(1)
+    time.sleep(0.1)
 
 # Вызываем функцию отображения экрана загрузки
 loading_screen()
