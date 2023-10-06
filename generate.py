@@ -128,9 +128,12 @@ def main():
                     log()
                 elif nbt == 3:
                     text = colored("Enter command>>> ", "blue")
-                    cscm = input(text)
-                    if cscm == 'help':
+                    custom_command = input(text)
+                    if custom_command == 'help':
                         help()
+                    else:
+                        print('Command not found')
+                        log()
                 elif nbt == 4:
                     clear_console()
                     exit(-1)
