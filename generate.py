@@ -17,17 +17,15 @@ def loading_screen():
         time.sleep(random.uniform(0.1, 0.5))  # Рандомная задержка от 0.1 до 0.5 секунд
         print("█", end='', flush=True)  # Отображение символа "█" без переноса строки
     print("] 100%...")
-    print("Loading os...")
-    print(" OK", end='', flush=True)
-    time.sleep(0.9)
-    print("Loading colors...")
-    print(" OK", end='', flush=True)
-    time.sleep(0.9)
-    print("Loading sql...")
-    print(" OK", end='', flush=True)
-    time.sleep(0.9)
-    print("Loading menu...")
-    print(" OK", end='', flush=True)
+    def loading_message(message):
+        print(f"Loading {message}...", end='', flush=True)
+        time.sleep(0.9)
+        print(" OK", end='', flush=True)
+    
+    loading_message("os")
+    loading_message("colors")
+    loading_message("sql")
+    loading_message("menu")
     time.sleep(1)
 
 # Вызываем функцию отображения экрана загрузки
