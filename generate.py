@@ -64,6 +64,31 @@ def start():
         db_connection.close()
     else:
         print("Unable to connect to the database.")
+        
+def generate_bot_code():
+    # Здесь вы можете генерировать код Telegram бота на основе запросов пользователя
+    # Например, вы можете запросить у пользователя имя бота, токен и другие параметры
+
+    bot_name = input("Enter your bot's name: ")
+    bot_token = input("Enter your bot's token: ")
+
+    # Генерируйте код на основе введенных параметров
+    bot_code = f'''
+from telegram import Bot
+
+bot = Bot(token="{bot_token}")
+
+def main():
+    bot.send_message(chat_id=message.chat.id, text="Hello, World!")
+
+if __name__ == "__main__":
+    main()
+'''
+
+    # Выведите сгенерированный код
+    print("Generated code for the Telegram bot:")
+    print(bot_code)
+    main()
 
 def main():
     start()
