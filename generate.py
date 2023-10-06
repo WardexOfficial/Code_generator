@@ -18,12 +18,16 @@ def loading_screen():
         print("█", end='', flush=True)  # Отображение символа "█" без переноса строки
     print("] 100%...")
     print("Loading os...")
+    print(" OK", end='', flush=True)
     time.sleep(0.9)
     print("Loading colors...")
+    print(" OK", end='', flush=True)
     time.sleep(0.9)
     print("Loading sql...")
+    print(" OK", end='', flush=True)
     time.sleep(0.9)
     print("Loading menu...")
+    print(" OK", end='', flush=True)
     time.sleep(1)
 
 # Вызываем функцию отображения экрана загрузки
