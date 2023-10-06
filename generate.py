@@ -1,5 +1,6 @@
 import time
 import random
+import os
 
 # Функция для очистки консоли
 def clear_console():
@@ -19,9 +20,7 @@ def loading_screen():
         time.sleep(0.9)
         print(" OK", end='', flush=True)
         print()
-    
-    loading_message("os")
-    import os
+        
     loading_message("colors")
     from termcolor import colored
     loading_message("sql")
