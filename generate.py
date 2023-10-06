@@ -16,7 +16,14 @@ def loading_screen():
     for _ in range(20):
         time.sleep(random.uniform(0.1, 0.5))  # Рандомная задержка от 0.1 до 1.0 секунд
         print("█", end='', flush=True)  # Отображение символа "█" без переноса строки
-    print("] 100%...")  # Завершение прогресс-бара с закрывающей скобкой
+    print("] 100%...")
+    print("Loading os...")
+    time.sleep(0.5)
+    print("Loading colors...")
+    time.sleep(0.5)
+    print("Loading sql...")
+    time.sleep(0.5)
+    print("Loading menu...")
     time.sleep(1)
 
 # Вызываем функцию отображения экрана загрузки
