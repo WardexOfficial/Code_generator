@@ -21,6 +21,7 @@ def loading_screen():
         print(f"Loading {message}...", end='', flush=True)
         time.sleep(0.9)
         print(" OK", end='', flush=True)
+        print()
     
     loading_message("os")
     loading_message("colors")
