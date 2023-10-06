@@ -15,6 +15,9 @@ def loading_screen():
         time.sleep(random.uniform(0.1, 0.5))  # Рандомная задержка от 0.1 до 0.5 секунд
         print("█", end='', flush=True)  # Отображение символа "█" без переноса строки
     print("] 100%...")
+    
+loading_screen()
+
 def loading_message(message):
     print(f"Loading {message}...", end='', flush=True)
     time.sleep(0.9)
@@ -28,8 +31,6 @@ import sqlite3
 loading_message("menu")
 time.sleep(0.1)
 
-# Вызываем функцию отображения экрана загрузки
-loading_screen()
 clear_console()
 
 text = colored("BOT CODE CREATOR", "red")
