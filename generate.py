@@ -33,6 +33,7 @@ time.sleep(0.1)
 
 clear_console()
 
+## author | t.me/Autoritetion
 text = colored("BOT CODE CREATOR", "red")
 print(f'\n{text}\n')
 text = colored("v1.2", "yellow")
@@ -41,12 +42,6 @@ text = colored("Made By t.me/Autoritetion", "yellow")
 print(f'{text}\n')
 
 loggined = False  # Инициализируем флаг, который будет указывать, вошел ли пользователь
-
-def help():
-    txt_to_text = """
-    What? Help? Really?"""
-    text = colored(txt_to_text, "yellow")
-    main()
 
 def start():
     text = colored("Enter password>>> ", "blue")
@@ -124,7 +119,7 @@ def main():
                 if nbt == 1:
                     generate_bot_code()  # Вызываем функцию генерации кода для Telegram бота
                 elif nbt == 2:
-                    text = colored("Check update!.", "yellow")
+                    text = colored("Check update!(this v1.2)", "yellow")
                     print(f'\n{text}')
                     log()
                 elif nbt == 3:
