@@ -8,7 +8,7 @@ Go to Termux, enter:
 -> pkg install sqlite
 -> git clone https://github.com/WardexOfficial/Code_generator
 -> cd Code_generator
--> python generate.py
+-> python main.py
 
 password: root
 
